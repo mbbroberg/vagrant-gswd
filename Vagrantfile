@@ -53,7 +53,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "mercurial"
     chef.add_recipe "emacs"
     chef.add_recipe "vim"
-    chef.add_recipe "pip"
+    #chef.add_recipe "pip"
     chef.add_recipe "nano"
     chef.add_recipe "gswd::database"
     chef.json = {

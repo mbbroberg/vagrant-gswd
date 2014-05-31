@@ -41,7 +41,7 @@ Vagrant::Config.run do |config|
   config.vm.provision :shell, :inline => "gem install --no-ri --no-rdoc chef"
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
-  # path, and data_bags path (all relative to this Vagrantfile), and adding 
+  # path, and data_bags path (all relative to this Vagrantfile), and adding
   # some recipes and/or roles.
 
   config.vm.provision :chef_solo do |chef|
@@ -53,6 +53,7 @@ Vagrant::Config.run do |config|
     chef.add_recipe "mercurial"
     chef.add_recipe "emacs"
     chef.add_recipe "vim"
+    chef.add_recipe "pip"
     chef.add_recipe "nano"
     chef.add_recipe "gswd::database"
     chef.json = {
